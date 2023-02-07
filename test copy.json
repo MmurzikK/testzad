@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "books"
+    ],
+    "properties": {
+        "books": {
+            "type": "array",
+            "default": [],
+            "title": "The books Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "author",
+                    "id",
+                    "isElectronicBook",
+                    "name",
+                    "year"
+                ],
+                "properties": {
+                    "author": {
+                        "type": "string",
+                        "title": "The author Schema",
+                        "examples": [
+                            "Роберт Мартин"
+                        ]
+                    },
+                    "id": {
+                        "type": "integer",
+                        "title": "The id Schema"
+                    },
+                    "isElectronicBook": {
+                        "type": "boolean",
+                        "title": "The isElectronicBook Schema"
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "The name Schema"
+                    },
+                    "year": {
+                        "type": "integer",
+                        "title": "The year Schema"
+                    }
+                }
+                
+            }
+        }
+    }
+}
